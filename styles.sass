@@ -1,0 +1,209 @@
+@import 'bourbon'
+@import 'normalize.scss'
+@import 'owl/owl.carousel.scss'
+@import 'owl/owl.theme.scss'
+
+$light: rgb(254,137,182)
+$h1: rgb(252,145,186)
+$extralight: rgb(246,169,198)
+$footbg: rgb(244,244,244)
+$main: rgb(237,84,142)
+$freeship: rgb(132,131,131)
+$account: rgb(132,131,131)
+$h2: rgb(100,100,100)
+$bottom: rgb(62,62,62)
+
+body 
+	font-family: "futura-pt"
+h1
+	font-size: 20px
+	color: $h1
+h2
+	font-family: "Futura", "futura-pt"
+	font-size: 20px
+	color: $h2
+	line-height: 1.5
+	text-transform: uppercase
+
+header
+	font-family: "futura-pt"
+	.dotted
+		border-bottom: thick dotted $footbg
+		clear: both
+		height: 170px
+	.logo
+		margin: 25px 5px 20px 70px
+		float: left
+	.account
+		display: inline-block
+		margin: auto
+		ul
+			list-style: none
+			color: $account
+			font-size: 18px
+			line-height: 2
+			font-weight: 400
+		li
+			float: left
+			padding: 0px 20px
+			margin-right: 3px
+			background-color: $footbg
+			text-transform: uppercase
+			&:last-child
+				border-radius: 0px 5px 5px 0px
+			&:first-child
+				border-radius: 5px 0px 0px 5px
+	.hours, .callusnow
+		float: left
+		padding: null 10px 10px 10px
+		h1
+			text-transform: uppercase
+			margin-bottom: 0px
+			text-align: center
+		p 
+			color: #838383
+			margin: 2px
+			font-weight: 300
+			text-align: center
+			a 
+				text-size: 18px
+				text-decoration: none
+				color: black
+		span
+			color: black
+			font-weight: bold
+	.freeshipping
+		clear: both
+		text-align: center
+		h1
+			margin: 0px
+			padding: 0px
+			color: $freeship
+	nav
+		background-color: $main
+		width: 100%
+		margin: auto
+		text-align: center
+		+display(flex)
+		color: white
+		height: 61px
+		text-transform: uppercase
+		ul
+			list-style: none
+			margin: 0 auto
+			text-align: center
+			height: auto
+		li 
+			float: left
+			padding: 20px
+			border-left: 3px solid white
+		button
+			background-color: black
+	.banner
+		max-width: 1497px 
+		position: relative
+		margin: 2px auto
+		img 
+			border: 1px solid grey
+
+section
+	margin: auto
+	width: 95%
+	clear: both
+	+display(flex 1 1)
+	.featured
+		border-bottom: 2px solid $main
+		width: 100%
+		margin: 0 auto
+	.videos
+		margin: 20px auto
+		text-align: center
+		iframe
+			margin: 0px 20px
+			border: 6px solid $extralight
+	.owl-carousel
+		margin: 20px 10px
+.bblock
+	+display(flex)
+	+flex-flow(row wrap)
+	+justify-content(center)
+	+align-content(space-between)
+	.bottomblock
+		+flex-grow(1)
+		width: 300px
+		text-align: center
+		+flex-basis(auto)
+		font-size: 20px
+		position: relative
+	.featured
+		width: 320px
+		text-align: left
+		margin-bottom: 20px
+	div
+		width: 300px
+		text-align: center
+		margin: 0 auto
+	.pink
+		background-color: $main
+		border-radius: 15px
+		posotion: absolute
+		bottom: 0px
+		width: 330px
+		height: 90px
+		margin: 20px auto
+		color: white
+		text-align: left
+		img 
+			float: left
+			padding: 10px 0px 0px 10px
+		> div
+			margin: 5px 10px 2px 10px
+			height: 50px
+			text-align: left
+			span 
+				position: absolute
+				font-size: 18px
+				font-weight: 300
+			h3
+				padding-top: 10px
+				margin: 10px
+	.mid 
+		background-color: $light
+footer
+	background-color: $footbg
+	width: 100%
+	padding: 20px 0px
+	position: relative
+	h2
+		border-bottom: 2px solid $main
+	.foot
+		+display(flex)
+		+align-content(space-around)
+		margin: 0px auto 60px auto
+		width: 95%
+		> div
+			flex: 1
+			width: 150px
+		.foot1, .foot2, .foot3, .foot4, .foot5
+			margin: 0 30px
+			ul 
+				padding: 0px 0px 0px 13px
+	.bottom
+		background-color: $bottom
+		width: 100%
+		position: absolute
+		bottom: 0px
+		height: 70px
+		padding: 0px
+		color: white
+		font-weight: 300
+		p 
+			float: left
+		.cc 
+			right: 150px
+			position: absolute
+		.btt
+			//float: right
+			position: absolute
+			right: 20px
+
