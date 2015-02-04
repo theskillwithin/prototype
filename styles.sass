@@ -2,6 +2,7 @@
 @import 'normalize.scss'
 @import 'owl/owl.carousel.scss'
 @import 'owl/owl.theme.scss'
+//@import url(http://fonts.googleapis.com/css?family=Muli:400,300)
 
 $light: rgb(254,137,182)
 $h1: rgb(252,145,186)
@@ -14,8 +15,7 @@ $h2: rgb(100,100,100)
 $bottom: rgb(62,62,62)
 
 body 
-	font-family: "futura-pt-condensed", "Futura-CondensedMedium"
-	+font-feature-settings("ordn")
+	font-family: "futura-pt-condensed"
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	font-size: 20px
@@ -25,17 +25,17 @@ h1
 	color: $h1
 	font-weight: 300
 h2
-	font-family: "proxima-nova-condensed"
+	font-family: "proxima-nova-extra-condensed"
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
-	font-size: 22px
+	font-size: 26px
 	color: $h2
 	line-height: 1.5
 	text-transform: uppercase
 	margin: 0px
 
 header
-	font-family: "futura-pt-condensed", "Futura-CondensedMedium"
+	font-family: "futura-pt-condensed"
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
 	font-weight: medium
@@ -82,11 +82,12 @@ header
 			margin: 2px
 			font-weight: light
 			text-align: center
-			font-size: 21px
-			letter-spacing: 1px
-			//font-family: "AppleGothic"			
-			//-webkit-font-smoothing: antialiased
-			//-moz-osx-font-smoothing: grayscale
+			font-size: 16px
+			letter-spacing: -.3px
+			font-family: "ff-basic-gothic-web-pro"
+			font-weight: 300
+			-webkit-font-smoothing: antialiased
+			-moz-osx-font-smoothing: grayscale
 			a 
 				text-size: 16px
 				text-decoration: none
@@ -202,7 +203,7 @@ section
 			h3
 				padding-top: 16px
 				margin: 10px 5px 0px 10px
-				font-size: 24px
+				font-size: 28px
 	.mid 
 		background-color: $light
 	.bmid
@@ -218,18 +219,24 @@ footer
 	font-size: 18px
 	h2
 		border-bottom: 2px solid $main
-		font-size: 20px
+		font-size: 23px
 	.foot
 		+display(flex)
 		+align-content(space-around)
 		margin: 0px auto 60px auto
 		width: 95%
+		font-family: "ff-basic-gothic-web-pro"
+		font-weight: 400
+		line-height: 19px
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		font-size: 16px
 		> div
 			flex: 1
 			width: 150px
 		.foot1, .foot2, .foot3, .foot4, .foot5
 			margin: 0 30px
-			letter-spacing: 1.5px
+			//letter-spacing: 1.5px
 			ul 
 				padding: 0px 0px 0px 13px
 	.bottom

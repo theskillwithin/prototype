@@ -499,11 +499,7 @@ th {
   background: url(AjaxLoader.gif) no-repeat center center; }
 
 body {
-  font-family: "futura-pt-condensed", "Futura-CondensedMedium";
-  -webkit-font-feature-settings: "ordn";
-  -moz-font-feature-settings: "ordn";
-  -ms-font-feature-settings: "ordn";
-  font-feature-settings: "ordn";
+  font-family: "futura-pt-condensed";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;
@@ -515,17 +511,17 @@ h1 {
   font-weight: 300; }
 
 h2 {
-  font-family: "proxima-nova-condensed";
+  font-family: "proxima-nova-extra-condensed";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 22px;
+  font-size: 26px;
   color: #646464;
   line-height: 1.5;
   text-transform: uppercase;
   margin: 0px; }
 
 header {
-  font-family: "futura-pt-condensed", "Futura-CondensedMedium";
+  font-family: "futura-pt-condensed";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: medium; }
@@ -572,8 +568,12 @@ header {
       margin: 2px;
       font-weight: light;
       text-align: center;
-      font-size: 21px;
-      letter-spacing: 1px; }
+      font-size: 16px;
+      letter-spacing: -0.3px;
+      font-family: "ff-basic-gothic-web-pro";
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale; }
       header .callhours p a {
         text-size: 16px;
         text-decoration: none;
@@ -721,7 +721,7 @@ section {
       .bblock .pink > div h3 {
         padding-top: 16px;
         margin: 10px 5px 0px 10px;
-        font-size: 24px; }
+        font-size: 28px; }
   .bblock .mid {
     background-color: #fe89b6; }
   .bblock .bmid {
@@ -738,7 +738,7 @@ footer {
   font-size: 18px; }
   footer h2 {
     border-bottom: 2px solid #ed548e;
-    font-size: 20px; }
+    font-size: 23px; }
   footer .foot {
     display: -webkit-box;
     display: -moz-box;
@@ -752,13 +752,18 @@ footer {
     align-content: space-around;
     -ms-flex-line-pack: distribute;
     margin: 0px auto 60px auto;
-    width: 95%; }
+    width: 95%;
+    font-family: "ff-basic-gothic-web-pro";
+    font-weight: 400;
+    line-height: 19px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px; }
     footer .foot > div {
       flex: 1;
       width: 150px; }
     footer .foot .foot1, footer .foot .foot2, footer .foot .foot3, footer .foot .foot4, footer .foot .foot5 {
-      margin: 0 30px;
-      letter-spacing: 1.5px; }
+      margin: 0 30px; }
       footer .foot .foot1 ul, footer .foot .foot2 ul, footer .foot .foot3 ul, footer .foot .foot4 ul, footer .foot .foot5 ul {
         padding: 0px 0px 0px 13px; }
   footer .bottom {
