@@ -498,6 +498,14 @@ th {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center; }
 
+.homeico {
+  fill: white; }
+
+.homesvg {
+  height: 45px;
+  width: 45px;
+  padding-top: 1px; }
+
 body {
   font-family: "futura-pt-condensed";
   -webkit-font-smoothing: antialiased;
@@ -519,6 +527,9 @@ h2 {
   line-height: 1.5;
   text-transform: uppercase;
   margin: 0px; }
+
+ul {
+  list-style-image: url(arrow.png); }
 
 header {
   font-family: "futura-pt-condensed";
@@ -548,6 +559,11 @@ header {
       margin-right: 3px;
       background-color: #f4f4f4;
       text-transform: uppercase; }
+      header .account li:hover {
+        background-color: #e2e2e2;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s; }
       header .account li:last-child {
         border-radius: 0px 10px 10px 0px; }
       header .account li:first-child {
@@ -605,30 +621,70 @@ header {
     color: white;
     height: 46px;
     text-transform: uppercase;
-    font-size: 22px; }
+    font-size: 22px;
+    padding-top: 0px; }
+    header nav svg {
+      height: 35px;
+      width: 45px;
+      margin-top: -3px;
+      overflow: hidden; }
     header nav ul {
       list-style: none;
       margin: 0 auto;
       text-align: center;
-      height: auto; }
+      height: 65px;
+      background-color: white;
+      padding: 0px; }
     header nav li {
       float: left;
       padding: 10px 15px 9px 15px;
-      border-left: 3px solid white; }
+      margin-left: 3px;
+      margin-top: -2px;
+      background-color: #ed548e; }
       header nav li:first-child {
-        padding: 2px 8px; }
+        height: 29px; }
       header nav li:last-child {
-        padding: 3px;
-        color: black; }
+        margin-top: 0px;
+        color: black;
+        padding: 5.5px; }
       header nav li button {
         color: white; }
-    header nav button {
-      background-color: black; }
+      header nav li:hover {
+        margin-top: -4px;
+        -webkit-transition: all 0.15s ease-out 0s;
+        -moz-transition: all 0.15s ease-out 0s;
+        transition: all 0.15s ease-out 0s;
+        background-color: #fe89b6; }
+        header nav li:hover:last-child {
+          margin-top: 0px;
+          background-color: #ed548e; }
     header nav img {
       position: relative;
       margin: auto;
       height: 39px;
       width: 39px; }
+    header nav .search {
+      border-bottom: 2px solid grey;
+      vertical-align: center; }
+      header nav .search input {
+        background-color: #F7F7F7;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+        height: 33px; }
+      header nav .search input:focus {
+        outline: none; }
+      header nav .search button {
+        height: 33px;
+        width: 33px;
+        margin: 0px;
+        padding: 0px;
+        float: right;
+        width: 40px;
+        border: none;
+        background-color: #F7F7F7; }
+      header nav .search button:focus {
+        outline: none; }
   header .banner {
     max-width: 960px;
     position: relative;
@@ -654,6 +710,23 @@ section {
       border: 6px solid #f6a9c6; }
   section .owl-carousel {
     margin: 20px 10px; }
+  section button {
+    background-color: #fe89b6;
+    border: none;
+    width: 70px;
+    height: 32px;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-left: 8px; }
+    section button:hover {
+      background-color: #ed548e; }
+  section input {
+    border-radius: 10px;
+    border: none;
+    background-color: #f3f3f3;
+    height: 32px;
+    width: 200px; }
 
 .bblock {
   display: -webkit-box;
@@ -709,9 +782,16 @@ section {
     height: 90px;
     margin: 20px auto;
     color: white; }
-    .bblock .pink img {
+    .bblock .pink:hover {
+      background-color: #fe89b6;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+    .bblock .pink svg {
       float: left;
-      padding: 10px 15px 0px 10px; }
+      padding: 1px 10px 0px 10px; }
+    .bblock .pink .svg {
+      fill: white; }
     .bblock .pink > div {
       text-align: left; }
       .bblock .pink > div span {
@@ -719,11 +799,16 @@ section {
         font-size: 18px;
         font-weight: 300; }
       .bblock .pink > div h3 {
-        padding-top: 16px;
-        margin: 10px 5px 0px 10px;
+        padding-top: 14px;
+        margin: 8px 0px 0px 10px;
         font-size: 28px; }
   .bblock .mid {
     background-color: #fe89b6; }
+    .bblock .mid:hover {
+      background-color: #ed548e;
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
   .bblock .bmid {
     height: 60px;
     font-size: 18px;
@@ -783,5 +868,16 @@ footer {
     footer .bottom .btt {
       position: absolute;
       right: 20px; }
+
+@media (max-width: 1175px) {
+  .hours, .callusnow {
+    margin-top: 50px; }
+
+  .callhours {
+    position: absolute;
+    right: 0px; }
+
+  header .dotted {
+    height: 149px; } }
 
 /*# sourceMappingURL=styles.css.map */

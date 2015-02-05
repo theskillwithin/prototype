@@ -14,6 +14,12 @@ $account: rgb(132,131,131)
 $h2: rgb(100,100,100)
 $bottom: rgb(62,62,62)
 
+.homeico
+	fill: white
+.homesvg
+	+size(45px)
+	padding-top: 1px
+
 body 
 	font-family: "futura-pt-condensed"
 	-webkit-font-smoothing: antialiased
@@ -33,6 +39,8 @@ h2
 	line-height: 1.5
 	text-transform: uppercase
 	margin: 0px
+ul
+	list-style-image: url(arrow.png)
 
 header
 	font-family: "futura-pt-condensed"
@@ -62,6 +70,9 @@ header
 			margin-right: 3px
 			background-color: $footbg
 			text-transform: uppercase
+			&:hover
+				background-color: darken($footbg, 7%)
+				+transition
 			&:last-child
 				border-radius: 0px 10px 10px 0px
 			&:first-child
@@ -114,28 +125,67 @@ header
 		height: 46px
 		text-transform: uppercase
 		font-size: 22px
+		padding-top: 0px
+		svg
+			height: 35px
+			width: 45px
+			margin-top: -3px
+			overflow: hidden
 		ul
 			list-style: none
 			margin: 0 auto
 			text-align: center
-			height: auto
+			height: 65px
+			background-color: white
+			padding: 0px
 		li 
 			float: left
 			padding: 10px 15px 9px 15px
-			border-left: 3px solid white
+			margin-left: 3px
+			margin-top: -2px
+			background-color: $main
+			//border-left: 3px solid white
 			&:first-child
-				padding: 2px 8px
+				height: 29px
 			&:last-child
-				padding: 3px
+				margin-top: 0px
 				color: black
+				padding: 5.5px
 			button
 				color: white
-		button
-			background-color: black
+			&:hover
+				margin-top: -4px
+				+transition
+				background-color: $light
+				&:last-child
+					margin-top: -0px
+					background-color: $main
 		img
 			position: relative
 			margin: auto
 			+size(39px)
+		.search
+			border-bottom: 2px solid grey
+			vertical-align: center
+			input
+				background-color: #F7F7F7
+				margin: 0px
+				padding: 0px
+				border: none
+				height: 33px
+			input:focus
+				outline: none
+			button
+				+size(33px)
+				margin: 0px
+				padding: 0px
+				float: right
+				width: 40px
+				border: none
+				background-color: #F7F7F7
+			button:focus
+				outline: none
+
 		
 	.banner
 		max-width: 960px 
@@ -162,6 +212,23 @@ section
 			border: 6px solid $extralight
 	.owl-carousel
 		margin: 20px 10px
+	button
+		background-color: $light
+		border: none
+		width: 70px
+		height: 32px
+		color: white
+		font-weight: bold
+		border-radius: 12px
+		margin-left: 8px
+		&:hover
+			background-color: $main
+	input
+		border-radius: 10px
+		border: none
+		background-color: #f3f3f3
+		height: 32px
+		width: 200px
 .bblock
 	+display(flex)
 	+flex-flow(row wrap)
@@ -191,9 +258,14 @@ section
 		height: 90px
 		margin: 20px auto
 		color: white
-		img 
+		&:hover
+			background-color: $light
+			+transition
+		svg 
 			float: left
-			padding: 10px 15px 0px 10px
+			padding: 1px 10px 0px 10px
+		.svg
+			fill: white
 		> div
 			text-align: left
 			span 
@@ -201,11 +273,14 @@ section
 				font-size: 18px
 				font-weight: 300
 			h3
-				padding-top: 16px
-				margin: 10px 5px 0px 10px
+				padding-top: 14px
+				margin: 8px 0px 0px 10px
 				font-size: 28px
 	.mid 
 		background-color: $light
+		&:hover
+			background-color: $main
+			+transition
 	.bmid
 		height: 60px
 		font-size: 18px
@@ -257,4 +332,12 @@ footer
 			//float: right
 			position: absolute
 			right: 20px
-
+@media (max-width: 1175px)
+	.hours, .callusnow
+		margin-top: 50px
+	.callhours
+		position: absolute
+		right: 0px
+	header
+		.dotted
+			height: 149px		
