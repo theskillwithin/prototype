@@ -1161,6 +1161,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Discover.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2069,
+		"inputAbbreviatedPath": "\/images\/Discover.jpg",
+		"outputAbbreviatedPath": "\/images\/Discover.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/epicuren.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1216,6 +1227,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/MasterCard.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2664,
+		"inputAbbreviatedPath": "\/images\/MasterCard.jpg",
+		"outputAbbreviatedPath": "\/images\/MasterCard.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/mouse.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1223,6 +1245,17 @@
 		"initialSize": 3009,
 		"inputAbbreviatedPath": "\/images\/mouse.jpg",
 		"outputAbbreviatedPath": "\/images\/mouse.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/PayPal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2076,
+		"inputAbbreviatedPath": "\/images\/PayPal.jpg",
+		"outputAbbreviatedPath": "\/images\/PayPal.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1256,6 +1289,17 @@
 		"initialSize": 2988,
 		"inputAbbreviatedPath": "\/images\/rhondaallison.jpg",
 		"outputAbbreviatedPath": "\/images\/rhondaallison.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Visa.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2292,
+		"inputAbbreviatedPath": "\/images\/Visa.jpg",
+		"outputAbbreviatedPath": "\/images\/Visa.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -842,7 +842,7 @@ section {
 footer {
   background-color: #f4f4f4;
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 0px 5px 0px;
   position: relative;
   font-size: 18px; }
   footer h2 {
@@ -880,18 +880,28 @@ footer {
     width: 100%;
     position: absolute;
     bottom: 0px;
-    height: 70px;
+    height: 40px;
     padding: 0px;
     color: white;
     font-weight: 300; }
     footer .bottom p {
-      float: left; }
+      float: left;
+      padding: 0px;
+      margin: 7px 0px 0px 23px; }
     footer .bottom .cc {
       right: 150px;
-      position: absolute; }
+      position: absolute;
+      padding: 0px;
+      margin: 5px 0px 0px 0px; }
+      footer .bottom .cc img {
+        width: auto;
+        height: 30px; }
     footer .bottom .btt {
       position: absolute;
-      right: 20px; }
+      right: 24px;
+      bottom: 8px; }
+      footer .bottom .btt:hover {
+        pointer: cursor; }
 
 @media (max-width: 1175px) {
   .hours, .callusnow {
@@ -942,6 +952,9 @@ footer {
     display: none; }
 
   .foot4 {
-    display: none; } }
+    display: none; }
+
+  .bottom p {
+    font-size: 12px; } }
 
 /*# sourceMappingURL=styles.css.map */

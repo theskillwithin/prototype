@@ -310,7 +310,7 @@ section
 footer
 	background-color: $footbg
 	width: 100%
-	padding: 20px 0px
+	padding: 20px 0px 5px 0px
 	position: relative
 	font-size: 18px
 	h2
@@ -340,19 +340,29 @@ footer
 		width: 100%
 		position: absolute
 		bottom: 0px
-		height: 70px
+		height: 40px
 		padding: 0px
 		color: white
 		font-weight: 300
 		p 
 			float: left
+			padding: 0px
+			margin: 7px 0px 0px 23px
 		.cc 
 			right: 150px
 			position: absolute
+			padding: 0px
+			margin: 5px 0px 0px 0px
+			img
+				width: auto
+				height: 30px
 		.btt
-			//float: right
 			position: absolute
-			right: 20px
+			right: 24px
+			bottom: 8px
+			&:hover
+				pointer: cursor
+				
 @media (max-width: 1175px)
 	.hours, .callusnow
 		margin-top: 50px
@@ -406,3 +416,6 @@ footer
 		display: none
 	.foot4
 		display: none
+	.bottom
+		p
+			font-size: 12px
