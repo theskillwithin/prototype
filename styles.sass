@@ -14,6 +14,9 @@ $account: rgb(132,131,131)
 $h2: rgb(100,100,100)
 $bottom: rgb(62,62,62)
 
+
+.gift
+	padding: 8.5px 9px 0px 9px
 .homeico
 	fill: white
 .homesvg
@@ -43,6 +46,32 @@ ul
 	list-style-image: url(arrow.png)
 
 header
+	.search2
+		display: none
+	.search
+		border-bottom: 2px solid grey
+		vertical-align: center
+		input
+			background-color: #F7F7F7
+			margin: 0px
+			padding: 0px
+			border: none
+			height: 29px
+		input:focus
+			outline: none
+		button
+			+size(29px)
+			margin: 0px
+			padding: 0px
+			float: right
+			width: 40px
+			border: none
+			background-color: #F7F7F7
+			img
+				margin-top: 0px
+				+size(34px)
+		button:focus
+			outline: none
 	font-family: "futura-pt-condensed"
 	-webkit-font-smoothing: antialiased
 	-moz-osx-font-smoothing: grayscale
@@ -70,9 +99,12 @@ header
 			margin-right: 3px
 			background-color: $footbg
 			text-transform: uppercase
+			box-shadow: 0px 1px darken($footbg, 10%)
 			&:hover
-				background-color: darken($footbg, 7%)
+				background-color: lighten($footbg, 2.5%)
+				box-shadow: 0px 1.5px darken($footbg, 10%)
 				+transition
+				cursor: pointer
 			&:last-child
 				border-radius: 0px 10px 10px 0px
 			&:first-child
@@ -126,6 +158,7 @@ header
 		text-transform: uppercase
 		font-size: 22px
 		padding-top: 0px
+		border-bottom: 2px solid $extralight
 		svg
 			height: 35px
 			width: 45px
@@ -141,63 +174,48 @@ header
 		li 
 			float: left
 			padding: 10px 15px 9px 15px
-			margin-left: 3px
-			margin-top: -2px
+			margin-left: 5px
+			margin-top: -3px
 			background-color: $main
+			box-shadow: -2px 2px $extralight, -1px 1px $extralight, -.6px .6px $extralight
+			border: .6px solid $extralight
 			//border-left: 3px solid white
 			&:first-child
 				height: 29px
 			&:last-child
 				margin-top: 0px
 				color: black
-				padding: 5.5px
+				padding: 7.5px
+				box-shadow: -2px 0px $extralight
+				border-bottom: 2px solid $extralight
 			button
 				color: white
 			&:hover
-				margin-top: -4px
+				margin-top: -5px
 				+transition
 				background-color: $light
+				cursor: pointer
 				&:last-child
 					margin-top: -0px
 					background-color: $main
 		img
 			position: relative
 			margin: auto
-			+size(39px)
-		.search
-			border-bottom: 2px solid grey
-			vertical-align: center
-			input
-				background-color: #F7F7F7
-				margin: 0px
-				padding: 0px
-				border: none
-				height: 33px
-			input:focus
-				outline: none
-			button
-				+size(33px)
-				margin: 0px
-				padding: 0px
-				float: right
-				width: 40px
-				border: none
-				background-color: #F7F7F7
-			button:focus
-				outline: none
-
-		
+			+size(39px)	
 	.banner
-		max-width: 960px 
+		max-width: 1200px 
 		position: relative
 		margin: 2px auto
+		padding-left: 4px
 		img 
 			border: 1px solid grey
-			margin: auto
+			margin: 0 auto
+			width: 99%
+			height: auto
 
 section
 	margin: auto
-	width: 95%
+	width: 99%
 	clear: both
 	+display(flex 1 1)
 	.featured
@@ -210,25 +228,27 @@ section
 		iframe
 			margin: 0px 5px
 			border: 6px solid $extralight
+			box-shadow: -3px 3px $main, -2px 2px $main, -1px 1px $main
 	.owl-carousel
 		margin: 20px 10px
 	button
 		background-color: $light
-		border: none
+		border: 2px solid pink
 		width: 70px
 		height: 32px
 		color: white
-		font-weight: bold
 		border-radius: 12px
 		margin-left: 8px
 		&:hover
 			background-color: $main
 	input
 		border-radius: 10px
-		border: none
+		border: 1px solid grey
 		background-color: #f3f3f3
 		height: 32px
 		width: 200px
+		&:focus
+			outline: none
 .bblock
 	+display(flex)
 	+flex-flow(row wrap)
@@ -258,6 +278,7 @@ section
 		height: 90px
 		margin: 20px auto
 		color: white
+		box-shadow: -1px 1px $extralight, -1px 1px $extralight, -.6px .6px $extralight
 		&:hover
 			background-color: $light
 			+transition
@@ -340,4 +361,48 @@ footer
 		right: 0px
 	header
 		.dotted
-			height: 149px		
+			height: 149px
+	
+@media (max-width: 1050px)
+	.bblock
+		.pink
+			width: 300px
+			> div
+				h3
+					font-size: 24px
+@media (max-width: 980px)
+	nav
+		li:last-child
+			display: none
+		ul
+			border-right: 1px solid white
+	header
+		.freeshipping
+			h1
+				display: none
+		.search2
+			display: block
+			width: 300px
+			margin: 2px auto
+			color: grey
+			input
+				width: 259px
+	.foot2
+		h2
+			font-size: 16px
+			padding-bottom: 7px
+@media (max-width: 785px)
+	.logo
+		img
+			width: 300px
+			height: auto
+	.foot5
+		display: none
+@media (max-width: 690px)
+	.logo
+		img
+			margin:  50px auto null auto
+	.hours
+		display: none
+	.foot4
+		display: none
