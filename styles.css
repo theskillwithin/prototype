@@ -498,6 +498,38 @@ th {
   min-height: 150px;
   background: url(AjaxLoader.gif) no-repeat center center; }
 
+#SM {
+  float: right;
+  color: white;
+  padding-right: 10px; }
+
+#SM svg {
+  height: 27px;
+  width: 27px;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+#SM span {
+  font-family: WalkwaySemiBoldRegular;
+  position: relative;
+  top: -7px; }
+
+#SM {
+  float: right; }
+
+#SM svg {
+  height: 27px;
+  width: 27px;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+#SM span {
+  font-family: WalkwaySemiBoldRegular;
+  position: relative;
+  top: -7px; }
+
 .gift {
   padding: 8.5px 9px 0px 9px; }
 
