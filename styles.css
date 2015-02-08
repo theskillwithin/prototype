@@ -532,29 +532,30 @@ th {
 
 /* General styles for all menus */
 .cbp-spmenu {
-  background: #47a3da;
+  background: #fe89b6;
   position: fixed; }
 
 .cbp-spmenu h3 {
-  color: #afdefa;
+  color: #fc91ba;
   font-size: 1.9em;
   padding: 20px;
   margin: 0;
   font-weight: 300;
-  background: #0d77b6; }
+  background: #ed548e; }
 
 .cbp-spmenu a {
   display: block;
   color: #fff;
   font-size: 1.1em;
-  font-weight: 300; }
+  font-weight: 300;
+  text-decoration: none; }
 
 .cbp-spmenu a:hover {
-  background: #258ecd; }
+  background: #ed548e; }
 
 .cbp-spmenu a:active {
   background: #afdefa;
-  color: #47a3da; }
+  color: #fe89b6; }
 
 /* Orientation-dependent styles for the content of the menu */
 .cbp-spmenu-vertical {
@@ -565,7 +566,7 @@ th {
   overflow-y: scroll; }
 
 .cbp-spmenu-vertical a {
-  border-bottom: 1px solid #258ecd;
+  border-bottom: 1px solid #f6a9c6;
   padding: 1em; }
 
 .cbp-spmenu-horizontal {
@@ -584,7 +585,7 @@ th {
   float: left;
   width: 20%;
   padding: 0.8em;
-  border-left: 1px solid #258ecd; }
+  border-left: 1px solid #f6a9c6; }
 
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-left {
@@ -735,8 +736,7 @@ header {
   header .account {
     display: inline-block;
     position: absolute;
-    right: 10px;
-    top: 0px; }
+    right: 20px; }
     header .account ul {
       list-style: none;
       color: #848383;
@@ -816,6 +816,9 @@ header {
     font-size: 22px;
     padding-top: 0px;
     border-bottom: 2px solid #f6a9c6; }
+    header nav a {
+      text-decoration: none;
+      color: white; }
     header nav svg {
       height: 35px;
       width: 45px;
@@ -1114,5 +1117,47 @@ footer {
 
   .bottom p {
     font-size: 12px; } }
+.toggle-menu {
+  display: none;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 70px;
+  height: 35px;
+  z-index: 10;
+  background-color: #ed548e;
+  border-radius: 10px;
+  border: 1px solid pink;
+  color: white; }
+
+@media (max-width: 750px) {
+  .toggle-menu {
+    display: block;
+    position: absolute;
+    right: 20px; }
+
+  .navigation {
+    display: none; }
+
+  header .account {
+    left: 0px; }
+    header .account ul {
+      position: absolute;
+      left: 0px !important; } }
+@media (max-width: 750px) {
+  .callusnow {
+    display: none; }
+
+  .account ul {
+    display: none; }
+
+  .foot1 {
+    display: none; }
+
+  .foot2 {
+    display: none; }
+
+  .bottom p {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

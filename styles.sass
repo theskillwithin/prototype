@@ -88,8 +88,7 @@ header
 	.account
 		display: inline-block
 		position: absolute
-		right: 10px
-		top: 0px
+		right: 20px
 		ul
 			list-style: none
 			color: $account
@@ -161,6 +160,9 @@ header
 		font-size: 22px
 		padding-top: 0px
 		border-bottom: 2px solid $extralight
+		a 
+			text-decoration: none
+			color: white
 		svg
 			height: 35px
 			width: 45px
@@ -421,3 +423,44 @@ footer
 	.bottom
 		p
 			font-size: 12px
+.toggle-menu
+	display: none
+	position: absolute
+	top: 17px
+	right: 20px
+	width: 70px
+	height: 35px
+	z-index: 10
+	background-color: $main
+	border-radius: 10px
+	border: 1px solid pink
+	color: white
+	
+	
+@media (max-width: 750px)
+	.toggle-menu
+		display: block
+		position: absolute
+		right: 20px
+	.navigation
+		display: none
+	header
+		.account
+			left: 0px
+			ul
+				position: absolute
+				left: 0px !important
+@media (max-width: 750px)
+	.callusnow
+		display: none
+	.account
+		ul
+			display: none
+	.foot1
+		display: none
+	.foot2
+		display: none
+	.bottom
+		p 
+			display: none
+	
