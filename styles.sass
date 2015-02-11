@@ -1,10 +1,11 @@
 @import 'bourbon'
+@import 'css/styles.scss'
 @import 'normalize.scss'
 @import 'owl/owl.carousel.scss'
 @import 'owl/owl.theme.scss'
 @import 'css/social.scss'
 @import 'css/jPushMenu.scss'
-//@import url(http://fonts.googleapis.com/css?family=Muli:400,300)
+
 
 $light: rgb(254,137,182)
 $h1: rgb(252,145,186)
@@ -16,7 +17,59 @@ $account: rgb(132,131,131)
 $h2: rgb(100,100,100)
 $bottom: rgb(62,62,62)
 
+.category-products ul
+	list-style: none
+	+display(flex)
+	justfiy-content: space-around
+	+flex-wrap(wrap)
+	li 
+		align-self: center
+		text-align: center
+.product-name
+	margin-top: 25px !important
+.price-box
+	.price
+		color: #cbcbcb !important
+		
+.product-name
+	a 
+		text-decoration: none
+		text-transform: none
+		font-size: 18px
+		vertical-align: middle
 
+.product-image:after
+	content: ''
+	border-bottom: 2px solid #b4b4b4
+	left: 0
+	position: absolute
+	bottom: -20px
+	width: 100%
+.actions
+	a 
+		background-color: $main
+		border: 2px solid $main
+		padding: 2px 3px
+		color: white
+		border-radius: 10px
+		text-decoration: none
+		font-size: 16px
+.col-main
+	width: 98%
+	margin: auto
+.col-inner
+	width: 98%
+	margin: auto
+.main
+	width: 98%
+	margin: auto
+	display: flex
+
+
+*
+	font-family: "futura-pt-condensed"
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
 .gift
 	padding: 8.5px 9px 0px 9px
 .homeico
@@ -44,6 +97,7 @@ h2
 	line-height: 1.5
 	text-transform: uppercase
 	margin: 0px
+	text-align: left
 ul
 	list-style-image: url(arrow.png)
 
@@ -206,16 +260,16 @@ header
 			position: relative
 			margin: auto
 			+size(39px)	
-	.banner
-		max-width: 1200px 
-		position: relative
-		margin: 2px auto
-		padding-left: 4px
-		img 
-			border: 1px solid grey
-			margin: 0 auto
-			width: 99%
-			height: auto
+.banner
+	max-width: 1200px 
+	position: relative
+	margin: 2px auto
+	padding-left: 4px
+	img 
+		border: 1px solid grey
+		margin: 0 auto
+		width: 99%
+		height: auto
 
 section
 	margin: auto
