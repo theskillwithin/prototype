@@ -1,0 +1,519 @@
+@import 'bourbon/bourbon.scss'
+@import 'scss/styles.scss'
+@import 'normalize.scss'
+@import 'owl/owl.carousel.scss'
+@import 'owl/owl.theme.scss'
+@import 'scss/css/social.scss'
+@import 'scss/css/jPushMenu.scss'
+
+$light: rgb(254,137,182)
+$h1: rgb(252,145,186)
+$extralight: rgb(246,169,198)
+$footbg: rgb(244,244,244)
+$main: rgb(237,84,142)
+$freeship: rgb(132,131,131)
+$account: rgb(132,131,131)
+$h2: rgb(100,100,100)
+$bottom: rgb(62,62,62)
+
+.category-products ul
+	list-style: none
+	+display(flex)
+	justfiy-content: space-around
+	+flex-wrap(wrap)
+	li 
+		align-self: center
+		text-align: center
+.product-name
+	margin-top: 25px !important
+.price-box
+	.price
+		color: #cbcbcb !important
+		
+.product-name
+	a 
+		text-decoration: none
+		text-transform: none
+		font-size: 18px
+		vertical-align: middle
+
+.product-image:after
+	content: ''
+	border-bottom: 2px solid #b4b4b4
+	left: 0
+	position: absolute
+	bottom: -20px
+	width: 100%
+.actions
+	a 
+		background-color: $main
+		border: 2px solid $main
+		padding: 2px 3px
+		color: white
+		border-radius: 10px
+		text-decoration: none
+		font-size: 16px
+.col-main
+	width: 98%
+	margin: auto
+.col-inner
+	width: 98%
+	margin: auto
+.main
+	width: 98%
+	margin: auto
+	display: flex
+
+
+*
+	font-family: "futura-pt-condensed"
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+.gift
+	padding: 8.5px 9px 0px 9px
+.homeico
+	fill: white
+.homesvg
+	+size(45px)
+	padding-top: 1px
+
+body 
+	font-family: "futura-pt-condensed"
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-size: 20px
+	letter-spacing: .7px
+h1
+	font-size: 26px
+	color: $h1
+	font-weight: 300
+h2
+	font-family: "proxima-nova-extra-condensed"
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-size: 26px
+	color: $h2
+	line-height: 1.5
+	text-transform: uppercase
+	margin: 0px
+	text-align: left
+ul
+	list-style-image: url(arrow.png)
+
+header
+	.search2
+		display: none
+	.search
+		border-bottom: 2px solid grey
+		vertical-align: center
+		input
+			background-color: #F7F7F7
+			margin: 0px
+			padding: 0px
+			border: none
+			height: 29px
+		input:focus
+			outline: none
+		button
+			+size(29px)
+			margin: 0px
+			padding: 0px
+			float: right
+			width: 40px
+			border: none
+			background-color: #F7F7F7
+			img
+				margin-top: 0px
+				+size(34px)
+		button:focus
+			outline: none
+	font-family: "futura-pt-condensed"
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	font-weight: medium
+	.dotted
+		border-bottom: thick dotted $footbg
+		clear: both
+		height: 135px
+	.logo
+		margin: 20px 5px 15px 30px
+		float: left
+	.account
+		display: inline-block
+		position: absolute
+		right: 20px
+		ul
+			list-style: none
+			color: $account
+			font-size: 18px
+			line-height: 2
+		li
+			float: left
+			padding: 0px 20px
+			margin-right: 3px
+			background-color: $footbg
+			text-transform: uppercase
+			box-shadow: 0px 1px darken($footbg, 10%)
+			&:hover
+				background-color: lighten($footbg, 2.5%)
+				box-shadow: 0px 1.5px darken($footbg, 10%)
+				+transition
+				cursor: pointer
+			&:last-child
+				border-radius: 0px 10px 10px 0px
+			&:first-child
+				border-radius: 10px 0px 0px 10px
+	.callhours
+		display: inline
+		margin: 0px 0px 0px 10px
+		.hours, .callusnow
+			float: left
+			padding: 0px 25px
+		h1
+			text-transform: uppercase
+			margin-bottom: 0px
+			text-align: center
+			font-size: 26px
+		p 
+			color: #838383
+			margin: 2px
+			font-weight: light
+			text-align: center
+			font-size: 16px
+			letter-spacing: -.3px
+			font-family: "ff-basic-gothic-web-pro"
+			font-weight: 300
+			-webkit-font-smoothing: antialiased
+			-moz-osx-font-smoothing: grayscale
+			a 
+				text-size: 16px
+				text-decoration: none
+				color: black
+		span
+			color: black
+			font-weight: bold
+			font-size: 16px
+	.freeshipping
+		clear: both
+		text-align: center
+		padding: 4px
+		h1
+			margin: 0px
+			padding: 0px
+			color: $freeship
+	nav
+		background-color: $main
+		width: 100%
+		margin: auto
+		text-align: center
+		+display(flex)
+		color: white
+		height: 46px
+		text-transform: uppercase
+		font-size: 22px
+		padding-top: 0px
+		border-bottom: 2px solid $extralight
+		a 
+			text-decoration: none
+			color: white
+		svg
+			height: 35px
+			width: 45px
+			margin-top: -3px
+			overflow: hidden
+		ul
+			list-style: none
+			margin: 0 auto
+			text-align: center
+			height: 65px
+			background-color: white
+			padding: 0px
+		li 
+			float: left
+			padding: 10px 15px 9px 15px
+			margin-left: 5px
+			margin-top: -3px
+			background-color: $main
+			box-shadow: -2px 2px $extralight, -1px 1px $extralight, -.6px .6px $extralight
+			border: .6px solid $extralight
+			//border-left: 3px solid white
+			&:first-child
+				height: 29px
+			&:last-child
+				margin-top: 0px
+				color: black
+				padding: 7.5px
+				box-shadow: -2px 0px $extralight
+				border-bottom: 2px solid $extralight
+			button
+				color: white
+			&:hover
+				margin-top: -5px
+				+transition
+				background-color: $light
+				cursor: pointer
+				&:last-child
+					margin-top: -0px
+					background-color: $main
+		img
+			position: relative
+			margin: auto
+			+size(39px)	
+.banner
+	max-width: 1200px 
+	position: relative
+	margin: 2px auto
+	padding-left: 4px
+	img 
+		border: 1px solid grey
+		margin: 0 auto
+		width: 99%
+		height: auto
+
+section
+	margin: auto
+	width: 99%
+	clear: both
+	+display(flex 1 1)
+	.featured
+		border-bottom: 2px solid $main
+		width: 100%
+		margin: 0 auto
+	.videos
+		margin: 20px auto
+		text-align: center
+		iframe
+			margin: 0px 5px
+			border: 6px solid $extralight
+			box-shadow: -3px 3px $main, -2px 2px $main, -1px 1px $main
+	.owl-carousel
+		margin: 20px 10px
+	button
+		background-color: $light
+		border: 2px solid pink
+		width: 70px
+		height: 32px
+		color: white
+		border-radius: 12px
+		margin-left: 8px
+		&:hover
+			background-color: $main
+	input
+		border-radius: 10px
+		border: 1px solid grey
+		background-color: #f3f3f3
+		height: 32px
+		width: 200px
+		&:focus
+			outline: none
+.bblock
+	+display(flex)
+	+flex-flow(row wrap)
+	+justify-content(center)
+	+align-content(space-between)
+	.bottomblock
+		+flex-grow(1)
+		width: 300px
+		text-align: center
+		+flex-basis(auto)
+		font-size: 20px
+		position: relative
+	.featured
+		width: 320px
+		text-align: left
+		margin-bottom: 20px
+	div
+		width: 300px
+		text-align: center
+		margin: 0 auto
+	.pink
+		background-color: $main
+		border-radius: 15px
+		posotion: absolute
+		bottom: 0px
+		width: 330px
+		height: 90px
+		margin: 20px auto
+		color: white
+		box-shadow: -1px 1px $extralight, -1px 1px $extralight, -.6px .6px $extralight
+		&:hover
+			background-color: $light
+			+transition
+		svg 
+			float: left
+			padding: 1px 10px 0px 10px
+		.svg
+			fill: white
+		> div
+			text-align: left
+			span 
+				position: absolute
+				font-size: 18px
+				font-weight: 300
+			h3
+				padding-top: 14px
+				margin: 8px 0px 0px 10px
+				font-size: 28px
+	.mid 
+		background-color: $light
+		&:hover
+			background-color: $main
+			+transition
+	.bmid
+		height: 60px
+		font-size: 18px
+		text-align: justify
+		font-weight: 300
+footer
+	background-color: $footbg
+	width: 100%
+	padding: 20px 0px 5px 0px
+	position: relative
+	font-size: 18px
+	h2
+		border-bottom: 2px solid $main
+		font-size: 23px
+	.foot
+		+display(flex)
+		+align-content(space-around)
+		margin: 0px auto 60px auto
+		width: 95%
+		font-family: "ff-basic-gothic-web-pro"
+		font-weight: 400
+		line-height: 19px
+		-webkit-font-smoothing: antialiased
+		-moz-osx-font-smoothing: grayscale
+		font-size: 16px
+		> div
+			flex: 1
+			width: 150px
+		.foot1, .foot2, .foot3, .foot4, .foot5
+			margin: 0 30px
+			//letter-spacing: 1.5px
+			ul 
+				padding: 0px 0px 0px 13px
+	.bottom
+		background-color: $bottom
+		width: 100%
+		position: absolute
+		bottom: 0px
+		height: 40px
+		padding: 0px
+		color: white
+		font-weight: 300
+		p 
+			float: left
+			padding: 0px
+			margin: 7px 0px 0px 23px
+		.cc 
+			right: 150px
+			position: absolute
+			padding: 0px
+			margin: 5px 0px 0px 0px
+			img
+				width: auto
+				height: 30px
+		.btt
+			position: absolute
+			right: 24px
+			bottom: 8px
+			&:hover
+				pointer: cursor
+				
+@media (max-width: 1175px)
+	.hours, .callusnow
+		margin-top: 50px
+	.callhours
+		position: absolute
+		right: 0px
+	header
+		.dotted
+			height: 149px
+	
+@media (max-width: 1050px)
+	.bblock
+		.pink
+			width: 300px
+			> div
+				h3
+					font-size: 24px
+@media (max-width: 980px)
+	nav
+		li:last-child
+			display: none
+		ul
+			border-right: 1px solid white
+	header
+		.freeshipping
+			h1
+				display: none
+		.search2
+			display: block
+			width: 300px
+			margin: 2px auto
+			color: grey
+			input
+				width: 259px
+	.foot2
+		h2
+			font-size: 16px
+			padding-bottom: 7px
+@media (max-width: 785px)
+	.logo
+		img
+			width: 300px
+			height: auto
+	.foot5
+		display: none
+@media (max-width: 690px)
+	.logo
+		img
+			margin:  50px auto null auto
+	.hours
+		display: none
+	.foot4
+		display: none
+	.bottom
+		p
+			font-size: 12px
+.toggle-menu
+	display: none
+	position: absolute
+	top: 17px
+	right: 20px
+	width: 70px
+	height: 35px
+	z-index: 10
+	background-color: $main
+	border-radius: 10px
+	border: 1px solid pink
+	color: white
+	
+	
+@media (max-width: 750px)
+	.toggle-menu
+		display: block
+		position: absolute
+		right: 20px
+	.navigation
+		display: none
+	header
+		.account
+			left: 0px
+			ul
+				position: absolute
+				left: 0px !important
+@media (max-width: 750px)
+	.callusnow
+		display: none
+	.account
+		ul
+			display: none
+	.foot1
+		display: none
+	.foot2
+		display: none
+	.bottom
+		p 
+			display: none
+	
